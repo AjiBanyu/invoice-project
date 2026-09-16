@@ -15,3 +15,8 @@ Verify Invoice Dashboard
     Wait Until Location Contains
     ...    /invoices/dashboard
     ...    20s
+
+# Verify Invoice Master Data - Customer
+#     Wait Until Location Contains
+#     ...    /invoices/client
+#     ...    20s

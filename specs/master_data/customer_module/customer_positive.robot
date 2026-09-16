@@ -8,11 +8,10 @@ Resource  ../resources/common/navigation_keywords.robot
 
 *** Test Cases ***
 
-TS-LOGIN-001 Testing Login
+TS-CUSTOMER-001 Search nama customer valid
 
     [Tags]    positive
    
-
     Login As Valid User
     Select Internal Testing Organization
     Open Module    Invoices
