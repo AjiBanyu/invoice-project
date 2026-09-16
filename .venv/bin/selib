@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/ajibanyu15/QA Projects/qa-automation/.venv/bin/python3.15" "$0" "$@"
+'''exec' "/Users/ajibanyu15/QA Projects/invoice-project/.venv/bin/python" "$0" "$@"
 ' '''
 import sys
 from SeleniumLibrary.entry.__main__ import cli
