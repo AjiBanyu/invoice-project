@@ -1,7 +1,7 @@
 *** Settings ***
 Resource  ../resources/common/login_keywords.robot
 Resource  ../resources/common/organization_keywords.robot
-Resource  ../resources/keywords/home_keywords.robot
+Resource  ../resources/common/navigation_keywords.robot
 
 
 
@@ -13,6 +13,7 @@ TS-LOGIN-001 Testing Login
 
     Login As Valid User
     Select Internal Testing Organization
-    Search Modul by Name    invoice
+    Open Module    Invoices
+    Verify Invoice Dashboard
     Sleep    2s
     # Verify Dashboard        

@@ -26,5 +26,5 @@ Login As Valid User
     Input Email    ${VALID_EMAIL}
     Input Password    ${VALID_PASSWORD}
     Click Login Button
-    Verify Dashboard
+    Verify Base URL
 
