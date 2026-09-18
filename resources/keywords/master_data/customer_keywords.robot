@@ -7,6 +7,7 @@ Resource   ../../locators/home_locators.robot
 *** Keywords ***
 
 Halaman Dashboard
+    Wait Until Element Is Visible    ${DASHBOARD_MENU}    10s
     Click Element    ${DASHBOARD_MENU}
 
 Daftar Customer
