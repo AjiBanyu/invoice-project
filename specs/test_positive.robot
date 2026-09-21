@@ -14,6 +14,7 @@ TS-LOGIN-001 Testing Login
     Login As Valid User
     Select Internal Testing Organization
     Halaman Dashboard
+    Daftar Customer
     # Open Module    Invoices
     # Verify Invoice Dashboard
     Sleep    10s

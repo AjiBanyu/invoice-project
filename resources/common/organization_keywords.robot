@@ -13,4 +13,4 @@ Select Internal Testing Organization
     Open Organization Dropdown
     Wait Until Element Is Visible    ${INTERNAL_TESTING_ORG}    10s
     Click Element    ${INTERNAL_TESTING_ORG}
-    
+    Wait Until Element Is Visible    ${DASHBOARD_MENU}    10s
