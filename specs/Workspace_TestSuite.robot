@@ -29,4 +29,11 @@ Forgot Password
     Verify Before Login
     Open Forgot Page
     Verify Before Sent Email
-    Reset Password
+    Forgot Password  ${VALID_EMAIL}
+
+TC02 - Forgot Password with Invalid Email
+    Open Browser Web
+    Verify Before Login
+    Open Forgot Page
+    Verify Before Sent Email
+    Forgot Password  ${INVALID_EMAIL}
