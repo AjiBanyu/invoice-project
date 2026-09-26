@@ -8,10 +8,10 @@ Resource    ../../config/login_data.robot
 
 *** Keywords ***
 
-Open Browser Web
-    Open Browser  ${URL}  chrome
-    Maximize Browser Window
-    Sleep    1
+# Open Browser Web
+#     Open Browser  ${URL}  chrome
+#     Maximize Browser Window
+#     Sleep    1
 
 
 # Verify Login

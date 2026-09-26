@@ -1,5 +1,6 @@
 *** Settings ***
-Resource  ../resources/common/login_keywords.robot
+Resource  ../../resources/common/browser_web_keywords.robot
+Resource  ../../resources/common/login_keywords.robot
 Resource  ../../resources/keywords/forgot_password_keywords.robot
 
 

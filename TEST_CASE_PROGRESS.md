@@ -12,7 +12,10 @@ TC-AUTH-007 Logout Successfully
 TC-AUTH-008 Forgot Password with Registered Email (belum sampai verify email)
 TC-AUTH-009 Forgot Password with Registered Email
 
-TC-AUTH-010 Forgot Password with Registered Email
+TC-AUTH-010 Valid Registration
+TC-AUTH-011 Minimum valid Password
+
+
 
 
 TC011 - Create Audit Planning
