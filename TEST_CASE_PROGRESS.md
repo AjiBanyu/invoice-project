@@ -12,9 +12,17 @@ TC-AUTH-007 Logout Successfully
 TC-AUTH-008 Forgot Password with Registered Email (belum sampai verify email)
 TC-AUTH-009 Forgot Password with Registered Email
 
-TC-AUTH-010 Valid Registration
-TC-AUTH-011 Minimum valid Password
-
+TC-AUTH-010  Valid Registration
+TC-AUTH-011  Minimum valid Password
+TC-AUTH-012  Empty Full Name
+TC-AUTH-013  Invalid Email Format
+TC-AUTH-014  Registered Email
+TC-AUTH-015  Password < 8 characters
+TC-AUTH-016  Password without uppercase
+TC-AUTH-017  Password without lowercase
+TC-AUTH-018  Password without number
+TC-AUTH-019  Password without special character
+TC-AUTH-020  Password mismatch
 
 
 

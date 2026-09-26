@@ -59,4 +59,4 @@ Create New Account
     Sleep                            1s
     Input Verify Password            ${verify_password}
     Sleep                            1s
-    Click Continue Button
+    # Click Continue Button
