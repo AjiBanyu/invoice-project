@@ -1,6 +1,6 @@
 *** Settings ***
 Resource  ../../resources/common/browser_web_keywords.robot
-Resource  ../resources/common/login_keywords.robot
+Resource  ../../resources/common/login_keywords.robot
 Resource  ../../resources/common/home_keywords.robot
 
 *** Test Cases ***
