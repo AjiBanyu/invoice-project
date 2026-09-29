@@ -9,8 +9,9 @@ TC-AUTH-001 login with Valid Credentials
     [Tags]    Positive
     Open Browser Web
     Verify Before Login
-    Login User  ${VALID_EMAIL}  ${VALID_PASSWORD}
+    Login User   ${VALID_EMAIL}  ${VALID_PASSWORD}
     Verify Dashboard
+    Verify Logged in Account
 TC-AUTH-002 Invalid Password
     [Tags]    Negative
     Open Browser Web

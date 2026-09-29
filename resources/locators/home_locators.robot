@@ -7,7 +7,8 @@ ${CONTENT_COMPONENT}       xpath=//*[@id="root"]/div/div/main
 
 # Aside Component
 ${LOGO}                    xpath=//*[@id="root"]/div/aside/div[1]/div
-
+${LOGGED_IN_NAME}          xpath=//*[@id="root"]/div/div/header/div[2]/div[3]/div/div/div/p[1]
+${LOGGED_IN_EMAIL}         xpath=//*[@id="root"]/div/div/header/div[2]/div[3]/div/div/div/p[2]
 
 
 

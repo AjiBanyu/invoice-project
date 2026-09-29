@@ -28,30 +28,40 @@ Verify Before Login
     Element Should Be Visible        ${VERIFY_CREATE_ACCOUNT}
 
 # step login
-Input Email 
-    [Arguments]    ${email}  
-    Realistic Type    ${EMAIL_FIELD}  ${email}
-Input Password
-    [Arguments]    ${password}
-    Realistic Type    ${PASSWORD_FIELD}  ${password}   
-Click Login Button
-    Wait Until Element Is Visible    ${LOGIN_BUTTON}    50s
-    Sleep                            1s
-    Click Element                    ${LOGIN_BUTTON}
-    Sleep                            1s
+# Input Email 
+#     [Arguments]    ${email}  
+#     Realistic Type    ${EMAIL_FIELD}  ${email}
+# Input Password
+#     [Arguments]    ${password}
+#     Realistic Type    ${PASSWORD_FIELD}  ${password}   
+# Click Login Button
+#     Wait Until Element Is Visible    ${LOGIN_BUTTON}    50s
+#     Sleep                            1s
+#     Click Element                    ${LOGIN_BUTTON}
+#     Sleep                            1s
 
 
 # Test Scenario & Case Login
 Login User
     [Arguments]    ${email}    ${password}
+    
+    # buat Suite Scope Email
+    Set Suite Variable    ${LOGGED_IN_EXPECTED_EMAIL}    ${email}
+    
+    # Input Email
     Wait Until Element Is Visible    ${EMAIL_FIELD}     50s
     Sleep                            1s
-    Input Email                      ${email}
+    Realistic Type                   ${EMAIL_FIELD}     ${email}
     Sleep                            1s
+    # Input Password
     Wait Until Element Is Visible    ${PASSWORD_FIELD}  50s
     Sleep                            1s
-    Input Password                   ${password}
+    Realistic Type                   ${PASSWORD_FIELD}  ${password}
     Sleep                            1s
-    Click Login Button
+    # Click Button
+    Wait Until Element Is Visible    ${LOGIN_BUTTON}    50s
+    Sleep                            1s
+    Click Element                    ${LOGIN_BUTTON}
+    Sleep                            1s
 
 

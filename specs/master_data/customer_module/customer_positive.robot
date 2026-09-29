@@ -19,6 +19,7 @@ TS-CUSTOMER-001 Dashboard Invoice
     Open Module    Invoices
     Verify Invoice Dashboard
     Sleep    2s
+    
     # Verify Dashboard  
 
 TS-CUSTOMER-002 Daftar Customer
