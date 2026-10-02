@@ -30,7 +30,7 @@ Verify Dashboard
     Element Should Be Visible       ${HEADER_COMPONENT}
     Wait Until Element Is Visible   ${CONTENT_COMPONENT}  50s
     Element Should Be Visible       ${CONTENT_COMPONENT}
-    Sleep    5s
+    Sleep    2s
 
 Verify Logged in Account
     # [Arguments]    ${expected_name}    ${expected_email}

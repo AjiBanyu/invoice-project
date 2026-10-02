@@ -2,15 +2,18 @@
 Library    SeleniumLibrary
 Resource    ../locators/organization_locators.robot
 Resource    ../locators/home_locators.robot
+Resource    ../common/ALL_keywords.robot
 
 
 *** Keywords ***
 
-Open Organization Dropdown
-    Wait Until Element Is Visible    ${ORGANIZATION_DROPDOWN}    10s
-    Click Element    ${ORGANIZATION_DROPDOWN}
-Select Internal Testing Organization
-    Open Organization Dropdown
-    Wait Until Element Is Visible    ${INTERNAL_TESTING_ORG}    10s
-    Click Element    ${INTERNAL_TESTING_ORG}
-    Wait Until Element Is Visible    ${DASHBOARD_MENU}    10s
+Organisasi
+    Wait Until Element Is Visible    ${PROFILE_ORGANIZATION}    10s
+    Sleep    1s
+    Click Element                    ${PROFILE_ORGANIZATION}
+    Sleep    1s
+    Wait Until Element Is Visible    ${SEARCH_ORGANIZATION}    10s
+    Sleep    1s
+    Realistic Type                   ${SEARCH_ORGANIZATION}     'Internal'
+    Sleep    1s
+    

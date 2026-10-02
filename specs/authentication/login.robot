@@ -2,6 +2,7 @@
 Resource  ../../resources/common/browser_web_keywords.robot
 Resource  ../../resources/common/login_keywords.robot
 Resource  ../../resources/common/home_keywords.robot
+Resource  ../../resources/common/organization_keywords.robot
 
 *** Test Cases ***
 
@@ -12,6 +13,7 @@ TC-AUTH-001 login with Valid Credentials
     Login User   ${VALID_EMAIL}  ${VALID_PASSWORD}
     Verify Dashboard
     Verify Logged in Account
+    Organisasi
 TC-AUTH-002 Invalid Password
     [Tags]    Negative
     Open Browser Web

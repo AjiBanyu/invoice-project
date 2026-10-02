@@ -4,8 +4,8 @@ Resource  ../resources/common/organization_keywords.robot
 Resource  ../resources/common/navigation_keywords.robot
 Resource  ../resources/keywords/master_data/customer_keywords.robot
 Resource  ../resources/common/home_keywords.robot
+Resource  ../resources/common/browser_web_keywords.robot
 Resource  ../resources/common/logout_keyword.robot
-Resource  ../resources/keywords/forgot_password_keywords.robot
 
 
 *** Test Cases ***
@@ -24,16 +24,12 @@ Resource  ../resources/keywords/forgot_password_keywords.robot
     # Verify Dashboard   
 
 # Forgot Password
-Forgot Password
+TestSuite
+    [Tags]    Positive
     Open Browser Web
     Verify Before Login
-    Open Forgot Page
-    Verify Before Sent Email
-    Forgot Password  ${VALID_EMAIL}
-
-TC02 - Forgot Password with Invalid Email
-    Open Browser Web
-    Verify Before Login
-    Open Forgot Page
-    Verify Before Sent Email
-    Forgot Password  ${INVALID_EMAIL}
+    Login User   ${VALID_EMAIL}  ${VALID_PASSWORD}
+    Verify Dashboard
+    # Verify Logged in Account
+    Organisasi
+    Logout
