@@ -3,19 +3,29 @@
 Library    SeleniumLibrary
 Resource   ../../locators/master_data/customer_locators.robot
 Resource   ../../locators/home_locators.robot
+Resource   ../../common/ALL_keywords.robot
 
 *** Keywords ***
 
-Halaman Dashboard
-    Wait Until Element Is Visible    ${DASHBOARD_MENU}    10s
-    Click Element    ${DASHBOARD_MENU}
-
-Daftar Customer
-    Click Element     ${MASTER_DATA_MENU}
-    Wait Until Element Is Visible   xpath=//span[normalize-space(.)="Customer"]    5s
-    Click Element     ${INVOICE_MENU}
-
-Search Customer by Name
-    [Arguments]    ${customer_name}
-    Click Element    ${SEARCH_BUTTON}
-    Input Text    ${SEARCH_INPUT}  ${customer_name}
+View Modul Customer
+    Wait Until Element Is Visible     ${MASTER_DATA_MENU}    10s
+    Click Element                     ${MASTER_DATA_MENU}
+    Sleep    1s
+    Wait Until Element Is Visible     ${CUSTOMER_MENU}       10s
+    Click Element                     ${CUSTOMER_MENU}
+    Sleep    1s
+Verify Customer Page
+    Wait Until Element Is Visible    ${TITLE_PAGE}                 50s
+    Element Should Be Visible        ${TITLE_PAGE}
+    Wait Until Element Is Visible    ${TAMBAH_CUSTOMER_BUTTON}     50s
+    Element Should Be Visible        ${TAMBAH_CUSTOMER_BUTTON}
+Search Customer By Name
+    Wait Until Element Is Visible    ${SEARCH_BUTTON}        10s
+    Click Element                    ${SEARCH_BUTTON}
+    Sleep    1s
+    Wait Until Element Is Visible    ${SEARCH_INPUT}         10s
+    Realistic Type                   ${SEARCH_INPUT}         ${search_Cust_value}
+    Sleep    1s
+    Wait Until Element is Visible    ${VERIFY_RESULT}        10s
+    Element Should Be Visible        ${VERIFY_RESULT}
+    Sleep    1s

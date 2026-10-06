@@ -12,3 +12,7 @@ Realistic Type
     Input Text       ${locator}                    ${char}
     Sleep            0.1s
     END
+Clear Element
+    [Arguments]      ${elements}
+    Click Element    ${elements}
+    Press Keys       ${elements}    COMMAND+A    DELETE

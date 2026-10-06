@@ -33,3 +33,7 @@ TestSuite
     # Verify Logged in Account
     Organisasi
     Logout
+
+# TestSuite
+#     [Tags]    Positive
+    

@@ -25,6 +25,25 @@ TC-AUTH-019  Password without special character
 TC-AUTH-020  Password mismatch
 
 
+## Customer Modul
 
-TC011 - Create Audit Planning
-TC012 - Edit Audit Planning
+### Search — Positive
+
+TC-CS-001  Search Customer with Existing Customer Name
+TC-CS-002  Search Customer with Existing Email
+TC-CS-003  Search Customer with Partial Customer Name
+TC-CS-004  Reset Search and Display All Customers
+
+### Search — Negative
+
+TC-CS-xxx  Search Customer with Non-Existing Customer
+TC-CS-xxx  Search Customer with Invalid Characters
+
+### Filter — Positive
+
+TC-CS-xxx  Filter Customer with Valid Criteria
+TC-CS-xxx  Clear Customer Filter Successfully
+
+### Filter — Negative
+
+TC-CS-xxx  Filter Customer with No Matching Data
