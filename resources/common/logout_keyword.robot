@@ -5,7 +5,7 @@ Resource   ../locators/logout_locators.robot
 
 *** Keywords ***
 Logout
-    Reload Page
+    # Reload Page
     Wait Until Element Is Visible    ${PROFILE_LOGOUT}    50s
     Sleep                            2s
     Click Element                    ${PROFILE_LOGOUT}

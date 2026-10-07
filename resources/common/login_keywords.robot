@@ -6,14 +6,8 @@ Resource    ../common/ALL_keywords.robot
 Resource    ../../config/environment.robot
 Resource    ../../config/login_data.robot
 
+
 *** Keywords ***
-
-# Open Browser Web
-#     Open Browser  ${URL}  chrome
-#     Maximize Browser Window
-#     Sleep    1
-
-
 # Verify Login
 Verify Before Login
     Wait Until Element Is Visible    ${VERIFY_TITLE_PAGE}          50s
@@ -63,5 +57,4 @@ Login User
     Sleep                            1s
     Click Element                    ${LOGIN_BUTTON}
     Sleep                            1s
-
 

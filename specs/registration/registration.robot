@@ -13,6 +13,7 @@ TC-AUTH-010 Valid Registration
     Verify Before Create Account
     Create New Account   ${NEW_USER_NAME}  ${NEW_EMAIL}  ${VALID_PASSWORD}  ${VALID_PASSWORD}
     Click Continue Button
+
 TC-AUTH-011 Minimum valid Password
     [Tags]     Positive
     Open Browser Web
@@ -29,6 +30,7 @@ TC-AUTH-012 Empty Full Name
     Verify Before Create Account
     Create New Account   ${EMPTY}  ${NEW_EMAIL}  Ab1!xyz11  Ab1!xyz11
     Element Should Be Visible     ${VERIFY_CONTIINUE_DISABLE}    50s
+
 TC-AUTH-013 Invalid Email Format
     [Tags]    Negative
     Open Browser Web
@@ -36,6 +38,7 @@ TC-AUTH-013 Invalid Email Format
     Verify Before Create Account
     Create New Account   ${NEW_USER_NAME}  ${INVALID_EMAIL}  Ab1!xyz11  Ab1!xyz11
     Element Should Be Visible     ${VERIFY_CONTIINUE_DISABLE}    50s
+
 TC-AUTH-014 Registered Email
     [Tags]    Negative
     Open Browser Web
@@ -43,6 +46,7 @@ TC-AUTH-014 Registered Email
     Verify Before Create Account
     Create New Account   ${NEW_USER_NAME}  ${REGISTERED_EMAIL}  ${VALID_PASSWORD}  ${VALID_PASSWORD}
     Click Continue Button
+
 TC-AUTH-015 Password < 8 Char
     [Tags]    Negative
     Open Browser Web
@@ -50,6 +54,7 @@ TC-AUTH-015 Password < 8 Char
     Verify Before Create Account
     Create New Account   ${NEW_USER_NAME}  ${NEW_EMAIL}  Ab1!xyz  Ab1!xyz
     Element Should Be Visible     ${VERIFY_CONTIINUE_DISABLE}    50s
+
 TC-AUTH-016 Password Without UpperCase
     [Tags]    Negative
     Open Browser Web
@@ -57,6 +62,7 @@ TC-AUTH-016 Password Without UpperCase
     Verify Before Create Account
     Create New Account  ${NEW_USER_NAME}  ${NEW_EMAIL}  ${WITHOUT_UPPERCASE}  ${WITHOUT_UPPERCASE}  
     Element Should Be Visible    ${VERIFY_CONTIINUE_DISABLE}     50s
+
 TC-AUTH-017 Password Without lowerCase
     [Tags]    Negative
     Open Browser Web
@@ -64,6 +70,7 @@ TC-AUTH-017 Password Without lowerCase
     Verify Before Create Account
     Create New Account  ${NEW_USER_NAME}  ${NEW_EMAIL}  ${WITHOUT_LOWERCASE}  ${WITHOUT_LOWERCASE}  
     Element Should Be Visible    ${VERIFY_CONTIINUE_DISABLE}     50s
+
 TC-AUTH-018 Password Without Number
     [Tags]    Negative
     Open Browser Web
@@ -71,6 +78,7 @@ TC-AUTH-018 Password Without Number
     Verify Before Create Account
     Create New Account  ${NEW_USER_NAME}  ${NEW_EMAIL}  ${WITHOUT_NUMBER}  ${WITHOUT_NUMBER}  
     Element Should Be Visible    ${VERIFY_CONTIINUE_DISABLE}     50s
+
 TC-AUTH-019 Password Without Special Char
     [Tags]    Negative
     Open Browser Web
@@ -78,6 +86,7 @@ TC-AUTH-019 Password Without Special Char
     Verify Before Create Account
     Create New Account  ${NEW_USER_NAME}  ${NEW_EMAIL}  ${WITHOUT_SPEC_CHAR}  ${WITHOUT_SPEC_CHAR}  
     Element Should Be Visible    ${VERIFY_CONTIINUE_DISABLE}     50s
+    
 TC-AUTH-020 Password Mismatch
     [Tags]    Negative
     Open Browser Web

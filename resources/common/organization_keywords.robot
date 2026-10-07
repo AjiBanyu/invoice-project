@@ -7,9 +7,9 @@ Resource    ../common/ALL_keywords.robot
 
 *** Keywords ***
 
-Organisasi
+Switch Organisasi
     Wait Until Element Is Visible    ${PROFILE_ORGANIZATION}          20s
-    Sleep    1s
+    Sleep    2s
     Click Element                    ${PROFILE_ORGANIZATION}
     Sleep    1s
     Wait Until Element Is Visible    ${SEARCH_ORGANIZATION}           10s

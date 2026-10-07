@@ -2,6 +2,7 @@
 Library     SeleniumLibrary
 Library     String
 Library     DateTime
+Resource    ../common/logout_keyword.robot
 
 *** Keywords ***
 Realistic Type
@@ -16,3 +17,6 @@ Clear Element
     [Arguments]      ${elements}
     Click Element    ${elements}
     Press Keys       ${elements}    COMMAND+A    DELETE
+Logout And Close Browser
+    Logout
+    Close All Browsers

@@ -19,13 +19,50 @@ Verify Customer Page
     Element Should Be Visible        ${TITLE_PAGE}
     Wait Until Element Is Visible    ${TAMBAH_CUSTOMER_BUTTON}     50s
     Element Should Be Visible        ${TAMBAH_CUSTOMER_BUTTON}
+# Search Customer By Name
+#     Wait Until Element Is Visible    ${SEARCH_BUTTON}        10s
+#     Click Element                    ${SEARCH_BUTTON}
+#     Sleep    1s
+#     Wait Until Element Is Visible    ${SEARCH_INPUT}         10s
+#     Realistic Type                   ${SEARCH_INPUT}         ${Search_Cust_value}
+#     Sleep    1s
+#     Wait Until Element is Visible    ${VERIFY_RESULT}        10s
+#     Element Should Be Visible        ${VERIFY_RESULT}
+#     Sleep    1s
 Search Customer By Name
-    Wait Until Element Is Visible    ${SEARCH_BUTTON}        10s
-    Click Element                    ${SEARCH_BUTTON}
-    Sleep    1s
+    # Press Keys    NONE  /
     Wait Until Element Is Visible    ${SEARCH_INPUT}         10s
-    Realistic Type                   ${SEARCH_INPUT}         ${search_Cust_value}
+    Realistic Type                   ${SEARCH_INPUT}         ${Search_Cust_value}
     Sleep    1s
     Wait Until Element is Visible    ${VERIFY_RESULT}        10s
     Element Should Be Visible        ${VERIFY_RESULT}
+    Sleep    1s
+
+    ### Clear Search
+    Wait Until Element Is Visible    ${CLEAR_SEARCH}         10s
+    Click Element                    ${CLEAR_SEARCH}
+    Sleep    1s
+Search Customer By Email
+    Wait Until Element Is Visible    ${SEARCH_INPUT}         10s
+    Realistic Type                   ${SEARCH_INPUT}         ${email_value}
+    Sleep    1s
+    Wait Until Element is Visible    ${VERIFY_RESULT}        10s
+    Element Should Be Visible        ${VERIFY_RESULT}
+    Sleep    1s
+
+    ### Clear Search
+    Wait Until Element Is Visible    ${CLEAR_SEARCH}         10s
+    Click Element                    ${CLEAR_SEARCH}
+    Sleep    1s
+Search Customer By Partial Name
+    Wait Until Element Is Visible    ${SEARCH_INPUT}         10s
+    Realistic Type                   ${SEARCH_INPUT}         PT QA Customer
+    Sleep    1s
+    Wait Until Element is Visible    ${VERIFY_RESULT}        10s
+    Element Should Be Visible        ${VERIFY_RESULT}
+    Sleep    1s
+    
+    ### Clear Search
+    Wait Until Element Is Visible    ${CLEAR_SEARCH}         10s
+    Click Element                    ${CLEAR_SEARCH}
     Sleep    1s

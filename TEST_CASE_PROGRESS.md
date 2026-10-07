@@ -32,11 +32,11 @@ TC-AUTH-020  Password mismatch
 TC-CS-001  Search Customer with Existing Customer Name
 TC-CS-002  Search Customer with Existing Email
 TC-CS-003  Search Customer with Partial Customer Name
-TC-CS-004  Reset Search and Display All Customers
+TC-CS-xxx  Reset Search and Display All Customers [Tidak digunakan]
 
 ### Search — Negative
 
-TC-CS-xxx  Search Customer with Non-Existing Customer
+TC-CS-004  Search Customer with Non-Existing Customer
 TC-CS-xxx  Search Customer with Invalid Characters
 
 ### Filter — Positive
